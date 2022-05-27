@@ -1,0 +1,4 @@
+CREATE DATABASE owncloud_db;
+GRANT ALL ON owncloud_db.* TO 'owncloud_user'@'localhost' IDENTIFIED BY 'StrongP@ssword';
+FLUSH PRIVILEGES;
+EXIT;
