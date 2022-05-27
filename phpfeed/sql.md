@@ -1,0 +1,7 @@
+CREATE TABLE rss_info
+ (
+ id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ title VARCHAR(200),
+ link VARCHAR(200),
+ description TEXT
+ );
