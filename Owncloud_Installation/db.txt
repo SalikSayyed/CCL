@@ -1,0 +1,8 @@
+CREATE DATABASE owncloud_db;
+GRANT ALL ON owncloud_db.* TO 'owncloud_user'@'localhost' IDENTIFIED BY 'StrongP@ssword';
+OR if 2 not running.. then do 4
+GRANT ALL *.* TO 'root'@'localhost';
+
+
+FLUSH PRIVILEGES;
+EXIT;
