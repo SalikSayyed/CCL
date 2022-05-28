@@ -4,14 +4,18 @@ curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-
 
 tar -xf google-cloud-cli-387.0.0-linux-x86.tar.gz
 
+cd google-cloud-cli
+cd bin
+gcloud init
+
 git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
 
-gcloud auth application-default login
+cd python-docs-samples
 
-python3 -m venv env
+python3 -m venv newenv
 source env/bin/activate
 
-googleProjects/python-docs-samples/appengine/standard_python3/hello_world
+newenv/python-docs-samples/appengine/standard_python3/hello_world
 
 pip install -r requirements.txt
 
