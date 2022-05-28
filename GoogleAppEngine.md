@@ -13,9 +13,9 @@ git clone https://github.com/GoogleCloudPlatform/python-docs-samples.git
 cd python-docs-samples
 
 python3 -m venv newenv
-source env/bin/activate
+source newenv/bin/activate
 
-newenv/python-docs-samples/appengine/standard_python3/hello_world
+cd python-docs-samples/appengine/standard_python3/hello_world
 
 pip install -r requirements.txt
 
